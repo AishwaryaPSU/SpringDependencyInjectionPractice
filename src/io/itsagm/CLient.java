@@ -6,7 +6,10 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class CLient {
     public static void main(String[] args) {
         ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
-        Student stu = context.getBean("student",Student.class   );
+        JuniorStudent stu = context.getBean("student", JuniorStudent.class);
         stu.cheating();
+
+        SeniorStudent seniorStu = context.getBean("seniorstudent",SeniorStudent.class);
+        seniorStu.cheating();
     }
 }

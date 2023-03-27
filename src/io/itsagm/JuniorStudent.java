@@ -1,9 +1,6 @@
 package io.itsagm;
 
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
-
-public class Student {
+public class JuniorStudent {
 
     private int id;
     private MathCheat mathCheat;
